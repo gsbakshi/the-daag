@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import MenuItem from '../menu-item/menu-item.component';
+
 import './directory.styles'
 
 const Directory = () => {
@@ -40,7 +42,9 @@ const Directory = () => {
 
   return (
     <div className = 'directory-menu'> 
-    {sections.map(({id, ...otherProps}) => (<h1>{...otherProps.title}</h1>))}
+    {sections.map(({id, ...otherSectionProps}) => (
+      <MenuItem key={id} {...otherSectionProps} />
+    ))}
     </div>
   );
 };
