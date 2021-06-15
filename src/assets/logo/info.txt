@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: HKGrotesk-Bold
+font link: https://hanken.co/product/hk-grotesk/
+font author: Hanken Design Co.
+font author site: https://hanken.co/
+
+
+icon designer: Magicon
+icon designer link: /magicon
+        
+{"bg":"#B86337","icon":"#252C29","font":"#ffffff","slogan":"#ffffff"}
+      
