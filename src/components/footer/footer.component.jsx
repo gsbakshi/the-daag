@@ -14,8 +14,8 @@ const Footer = () => (
                 <Logo className='logo' />
             </Link>
             <div className='options'>
-                <p className='option'> CATEGORIES </p>
-                <p className='option'> USEFUL LINKS </p>
+                <Link className='option' to='/shop'> CATEGORIES </Link>
+                <Link className='option' to='#'> USEFUL LINKS </Link>
             </div>
         </div>
        

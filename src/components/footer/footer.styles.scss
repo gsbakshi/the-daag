@@ -9,7 +9,7 @@
   .quicklinks{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
 
 
     @media screen and (max-width: 800px) {
@@ -37,6 +37,7 @@
       height: 100%;
       display: flex;
       justify-content: flex-end;
+      align-items: flex-start;
       
       .option {
         padding: 0px 15px;
