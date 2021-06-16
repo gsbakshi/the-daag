@@ -1,30 +1,30 @@
 .header {
-  height: 8vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  background-color: #8F532C;
-  align-items: center;
-  padding: 0px 40px;
+  background-color: #724223;
+  padding: 16px 40px;
   
   @media screen and (max-width: 800px) {
-    padding: 0px 20px;
+    padding: 12px 20px;
   }
   
   .logo-container {
-    align-content: center;
-    width: 8vw;
-    padding-top: 4px;
+    align-self: center;
+    align-items: center;
+    width: 10%;
     justify-content: flex-start;
     
+    @media screen and (max-width: 1200px) {
+      width: 16%;
+    }
     @media screen and (max-width: 800px) {
-      padding-top: 8px;
-      width: 24vw;
+      width: 24%;
     }
   }
 
   .options {
-    width: 50%;
+    // width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -32,7 +32,16 @@
 
     .option {
       padding: 0px 15px;
-      font-size: 18px;
+      font-size: 16px;
+      
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 10px;
+        font-weight: 600;
+      }
     }
   }
 }
