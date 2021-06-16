@@ -4,6 +4,7 @@ import 'firebase/auth';
 
 import firebaseConfig from './firebase.config';
 
+// Replace your with your own firebaseConfig from firbase dashboard
 const config = firebaseConfig;
 
 // Initialize Firebase
