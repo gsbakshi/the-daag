@@ -1,10 +1,12 @@
 $sub-color: grey;
-$main-color: black;
+$main-color: whitesmoke;
 
 @mixin shrinkLabel {
-  top: -14px;
+  top: -20px;
   font-size: 12px;
   color: $main-color;
+  padding-left: 0px;
+  opacity: 0.5;
 }
 
 .group {
@@ -16,11 +18,11 @@ $main-color: black;
     background-color: white;
     color: $sub-color;
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px;
     display: block;
     width: 100%;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
 
@@ -46,6 +48,8 @@ $main-color: black;
     left: 5px;
     top: 10px;
     transition: 300ms ease all;
+    font-variant-caps: small-caps;
+    padding-left: 10px;
 
     &.shrink {
       @include shrinkLabel();

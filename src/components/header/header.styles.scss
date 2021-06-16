@@ -4,6 +4,9 @@
   margin-bottom: 25px;
   background-color: #724223;
   padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   
   @media screen and (max-width: 800px) {
     padding: 12px 20px;
