@@ -47,36 +47,4 @@
     }
   }
 
-  .copyright-contact {
-    margin-top: 60px;
-    color: whitesmoke;
-    font-size: 0.8rem;
-
-    .icon-container{
-      width: 5vw;
-      display: inline-grid;
-      align-items: start;
-      justify-items: start;
-      grid-auto-flow: column;
-      grid-gap: 4px 16px;
-
-      .icon {
-        fill: whitesmoke;
-      }
-
-      @media screen and (max-width: 1200px) {
-        width: 8vw;
-      }
-      
-      @media screen and (max-width: 800px) {
-        width: 14vw;
-      }
-    }
-
-    .disclaimer{
-      font-size: 0.5rem;
-      word-spacing: 0.12rem;
-      letter-spacing: 0.06rem;
-    }
-  }
 }
