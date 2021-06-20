@@ -32,10 +32,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    
     .option {
+      color: whitesmoke;
       padding: 0px 15px;
       font-size: 16px;
+      cursor: pointer;
       
       @media screen and (max-width: 1200px) {
         font-size: 12px;

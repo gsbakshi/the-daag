@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
 import 'firebase/firestore';
 import 'firebase/auth';
 
@@ -9,7 +9,7 @@ const config = firebaseConfig;
 
 // Initialize Firebase
 firebase.initializeApp(config);
-firebase.analytics();
+// firebase.analytics();
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;

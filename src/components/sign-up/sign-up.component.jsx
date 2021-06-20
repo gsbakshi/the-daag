@@ -65,7 +65,7 @@ const SignUp = () => {
                     type='text'
                     handleChange={ handleChange }
                     value={ displayName }
-                    label='Display Name'
+                    label='display name'
                     required
                 />
                 <FormInput
@@ -73,7 +73,7 @@ const SignUp = () => {
                     type='email'
                     handleChange={ handleChange }
                     value={ email }
-                    label='Email'
+                    label='email'
                     required
                 />
                 <FormInput
@@ -81,7 +81,7 @@ const SignUp = () => {
                     type='password'
                     handleChange={ handleChange }
                     value={ password }
-                    label='Password'
+                    label='password'
                     required
                 />
                 <FormInput
@@ -89,7 +89,7 @@ const SignUp = () => {
                     type='password'
                     handleChange={ handleChange }
                     value={ confirmPassword }
-                    label='Confirm Password'
+                    label='confirm password'
                     required
                 />
                 <CustomButton type='submit'>SIGN UP</CustomButton>

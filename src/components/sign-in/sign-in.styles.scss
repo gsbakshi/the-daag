@@ -3,4 +3,10 @@
   display: flex;
   flex-direction: column;
   color: whitesmoke;
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
