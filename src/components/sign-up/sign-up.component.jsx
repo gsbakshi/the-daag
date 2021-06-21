@@ -27,7 +27,7 @@ const SignUp = () => {
                 password
             );
 
-            await createUserProfileDocument(user, { displayName });
+            await createUserProfileDocument(user, displayName);
 
             setDisplayName('');
             setEmail('');
@@ -52,7 +52,6 @@ const SignUp = () => {
             default:
                 return;
         }
-        
     };
 
     return (
