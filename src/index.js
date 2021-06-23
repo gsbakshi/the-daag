@@ -6,10 +6,9 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import './index.css';
 
-import { store, persistor } from './redux/store';
-
 import App from './App';
 
+import { store, persistor } from './redux/store';
 
 import reportWebVitals from './reportWebVitals';
 

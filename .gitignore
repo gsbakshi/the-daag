@@ -8,6 +8,9 @@
 #api config file
 firebase.config.js
 
+#stripe publishable key for testing
+stripe.publishable-key.js
+
 # testing
 /coverage
 
