@@ -13,7 +13,7 @@ import {
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
     <CartContainer onClick={ toggleCartHidden }>
-        <ShoppingIcon />
+        <ShoppingIcon /> 
         <ItemCountContainer>
             { itemCount }
         </ItemCountContainer>
