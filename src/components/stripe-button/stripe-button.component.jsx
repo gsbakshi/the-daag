@@ -5,6 +5,8 @@ import stripePublishableKey from './stripe.publishable-key';
 
 const StripeCheckoutButton = ({ price }) => {
     const priceForStripe = price * 100;
+
+    // Add you stripe publishable key from the stripe dashboard
     const publishableKey = stripePublishableKey;
 
     const onToken = token => {
