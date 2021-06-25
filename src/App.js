@@ -13,12 +13,22 @@ import ShopPage from './pages/shop/shop.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import {
+  auth,
+  createUserProfileDocument,
+  // addCollectionsAndDocuments
+} from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
-const App = ({ setCurrentUser, currentUser }) => {
+// import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
+
+const App = ({
+  setCurrentUser,
+  currentUser,
+  // collectionsArray
+}) => {
 
   useEffect(
     () => {
@@ -33,9 +43,12 @@ const App = ({ setCurrentUser, currentUser }) => {
         }
 
         setCurrentUser(userAuth);
-        console.log('x');
+        // addCollectionsAndDocuments('collections', collectionsArray.map(({title, items}) => ({title, items})))
       })
-    }, [setCurrentUser]
+    }, [
+    setCurrentUser,
+    // collectionsArray
+  ]
   );
 
   return (
@@ -62,7 +75,8 @@ const App = ({ setCurrentUser, currentUser }) => {
 };
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+  // collectionsArray : selectCollectionsForPreview
 });
 
 const mapDispatchToProps = dispatch => ({
